@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_below="@id/toolbar">
+
+    <com.h6ah4i.android.materialshadowninepatch.MaterialShadowContainerView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/eventPostCard"
+        style="@style/ms9_DefaultShadowStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8.0dip"
+        app:ms9_forceUseCompatShadow="true"
+        app:ms9_shadowElevation="8.0dip"
+        app:ms9_shadowTranslationZ="4.0dip">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/uploaderUsername"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="8.0dip"
+                android:text="Username"
+                android:textSize="18.0sp" />
+
+            <ImageView
+                android:id="@+id/photoImage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/uploaderUsername"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/profile_photos" />
+        </RelativeLayout>
+    </com.h6ah4i.android.materialshadowninepatch.MaterialShadowContainerView>
+</RelativeLayout>

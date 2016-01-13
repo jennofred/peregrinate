@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="materialshadowninepatch-0.6.5">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.h6ah4i.android.materialshadowninepatch/materialshadowninepatch/0.6.5/res" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.h6ah4i.android.materialshadowninepatch/materialshadowninepatch/0.6.5/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.h6ah4i.android.materialshadowninepatch/materialshadowninepatch/0.6.5/ab90f049b71941ebb30dcbc0a6df4c40c963077/materialshadowninepatch-0.6.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

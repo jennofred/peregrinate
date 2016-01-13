@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loginLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <ScrollView
+        android:id="@+id/scrollLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:isScrollContainer="false">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:id="@+id/peregrinateLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="52.0dip"
+                android:src="@drawable/peregrinate_title"
+                android:transitionName="peregrinateTitle" />
+
+            <RelativeLayout
+                android:id="@+id/usernameLoginLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/peregrinateLogo"
+                android:layout_marginBottom="2.0dip"
+                android:layout_marginTop="48.0dip"
+                android:background="#22000000">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="48.0dip"
+                    android:layout_height="48.0dip"
+                    android:padding="8.0dip"
+                    android:src="@drawable/ic_login_username" />
+
+                <ImageView
+                    android:id="@+id/emptyUsername"
+                    android:layout_width="48.0dip"
+                    android:layout_height="48.0dip"
+                    android:layout_alignEnd="@+id/usernameTextField"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/usernameTextField"
+                    android:padding="4.0dip"
+                    android:src="@drawable/ic_error"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/usernameTextField"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48.0dip"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/imageView4"
+                    android:layout_toRightOf="@+id/imageView4"
+                    android:background="#00000000"
+                    android:ems="10"
+                    android:hint="Username or E-mail"
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="#aaffffff" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/passwordLoginLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/usernameLoginLayout"
+                android:background="#22000000"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="48.0dip"
+                    android:layout_height="48.0dip"
+                    android:padding="8.0dip"
+                    android:src="@drawable/ic_lock" />
+
+                <ImageView
+                    android:id="@+id/emptyPassword"
+                    android:layout_width="48.0dip"
+                    android:layout_height="48.0dip"
+                    android:layout_alignEnd="@+id/passwordTextField"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/passwordTextField"
+                    android:padding="4.0dip"
+                    android:src="@drawable/ic_error"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/passwordTextField"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48.0dip"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/imageView3"
+                    android:layout_toRightOf="@+id/imageView3"
+                    android:background="#00000000"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColorHint="#aaffffff" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/passwordLoginLayout"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorPrimary"
+                android:elevation="1.0dip"
+                android:onClick="loginButton"
+                android:text="login"
+                android:textColor="@color/colorLight"
+                android:textSize="26.0sp" />
+
+            <LinearLayout
+                android:id="@+id/invalid"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/loginButton"
+                android:layout_margin="16.0dip"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:layout_width="48.0dip"
+                    android:layout_height="48.0dip"
+                    android:src="@drawable/ic_error" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16.0dip"
+                    android:text="Invalid username or password"
+                    android:textColor="@color/colorLight"
+                    android:textSize="18.0sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="64.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:elevation="2dp"
+        android:foregroundGravity="bottom"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/loginWithFacebook"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:background="#ff3b5998"
+            android:onClick="loginWithFacebook"
+            android:src="@drawable/login_with_facebook" />
+
+        <ImageView
+            android:id="@+id/signUp"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:background="@color/colorPrimary"
+            android:onClick="signUp"
+            android:src="@drawable/sign_up"
+            android:transitionName="signUpTransition" />
+    </LinearLayout>
+</RelativeLayout>

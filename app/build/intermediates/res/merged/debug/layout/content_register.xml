@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <ImageView
+        android:id="@+id/signUpLogo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24.0dip"
+        android:src="@drawable/sign_up_title"
+        android:transitionName="signUpTransition" />
+
+    <RelativeLayout
+        android:id="@+id/emailSignUpLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signUpLogo"
+        android:layout_marginBottom="2.0dip"
+        android:layout_marginTop="24.0dip"
+        android:background="#22000000">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="48.0dip"
+            android:layout_height="48.0dip"
+            android:padding="8.0dip"
+            android:src="@drawable/ic_email_white_36dp" />
+
+        <ImageView
+            android:id="@+id/emptyEmail"
+            android:layout_width="48.0dip"
+            android:layout_height="48.0dip"
+            android:layout_alignEnd="@+id/emailTextFieldSignUp"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/emailTextFieldSignUp"
+            android:padding="4.0dip"
+            android:src="@drawable/ic_error"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/emailTextFieldSignUp"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageView4"
+            android:layout_toRightOf="@+id/imageView4"
+            android:background="#00000000"
+            android:ems="10"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#aaffffff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/passwordSignUpLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailSignUpLayout"
+        android:layout_marginBottom="2.0dip"
+        android:background="#22000000">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="48.0dip"
+            android:layout_height="48.0dip"
+            android:padding="8.0dip"
+            android:src="@drawable/ic_lock" />
+
+        <ImageView
+            android:id="@+id/emptyPassword"
+            android:layout_width="48.0dip"
+            android:layout_height="48.0dip"
+            android:layout_alignEnd="@+id/passwordTextFieldSignUp"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/passwordTextFieldSignUp"
+            android:padding="4.0dip"
+            android:src="@drawable/ic_error"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/passwordTextFieldSignUp"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageView5"
+            android:layout_toRightOf="@+id/imageView5"
+            android:background="#00000000"
+            android:ems="10"
+            android:hint="Choose password"
+            android:inputType="textPassword"
+            android:textColorHint="#aaffffff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/usernameSignUpLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordSignUpLayout"
+        android:layout_marginBottom="2.0dip"
+        android:background="#22000000">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="48.0dip"
+            android:layout_height="48.0dip"
+            android:padding="8.0dip"
+            android:src="@drawable/ic_login_username" />
+
+        <ImageView
+            android:id="@+id/emptyUsername"
+            android:layout_width="48.0dip"
+            android:layout_height="48.0dip"
+            android:layout_alignEnd="@+id/usernameTextFieldSignUp"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/usernameTextFieldSignUp"
+            android:padding="4.0dip"
+            android:src="@drawable/ic_error"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/usernameTextFieldSignUp"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageView6"
+            android:layout_toRightOf="@+id/imageView6"
+            android:background="#00000000"
+            android:capitalize="none"
+            android:ems="10"
+            android:hint="Choose username"
+            android:inputType="textPhonetic"
+            android:textColorHint="#aaffffff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/birthdaySignUpLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usernameSignUpLayout"
+        android:layout_marginBottom="2.0dip"
+        android:background="#22000000">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="48.0dip"
+            android:layout_height="48.0dip"
+            android:padding="8.0dip"
+            android:src="@drawable/ic_event_note_white_36dp" />
+
+        <ImageView
+            android:id="@+id/emptyBirthday"
+            android:layout_width="48.0dip"
+            android:layout_height="48.0dip"
+            android:layout_alignEnd="@+id/birthdayTextFieldSignUp"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/birthdayTextFieldSignUp"
+            android:padding="4.0dip"
+            android:src="@drawable/ic_error"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/birthdayTextFieldSignUp"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageView7"
+            android:layout_toRightOf="@+id/imageView7"
+            android:background="#00000000"
+            android:ems="10"
+            android:hint="Date of birth"
+            android:textColorHint="#aaffffff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/genderSignUpLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/birthdaySignUpLayout"
+        android:layout_marginBottom="2.0dip"
+        android:background="#22000000">
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="48.0dip"
+            android:layout_height="48.0dip"
+            android:padding="8.0dip"
+            android:src="@drawable/ic_people_white_36dp" />
+
+        <ImageView
+            android:id="@+id/emptyGender"
+            android:layout_width="48.0dip"
+            android:layout_height="48.0dip"
+            android:layout_alignEnd="@+id/genderTextFieldSignUp"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/genderTextFieldSignUp"
+            android:padding="4.0dip"
+            android:src="@drawable/ic_error"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/genderTextFieldSignUp"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageView8"
+            android:layout_toRightOf="@+id/imageView8"
+            android:background="#00000000"
+            android:capitalize="none"
+            android:ems="10"
+            android:hint="Gender"
+            android:textColorHint="#aaffffff" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/genderSignUpLayout"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:elevation="1.0dip"
+        android:text="SIGN UP"
+        android:textColor="@color/colorLight"
+        android:textSize="26.0sp" />
+</RelativeLayout>
